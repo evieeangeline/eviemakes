@@ -1,0 +1,21 @@
+{
+  "name": "temp",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4",
+    "@astrojs/react": "^5.0.7",
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.8.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
