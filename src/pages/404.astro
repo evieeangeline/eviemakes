@@ -1,0 +1,171 @@
+---
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="page not found — evie makes" />
+    <title>404 — evie makes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <main>
+      <div class="layout">
+        <p class="four-oh-four">
+          <span>4</span>
+          <span class="scream-zero">
+            <img src="/images/404/the_scream.png" alt="" />
+          </span>
+          <span>4</span>
+        </p>
+        <div class="text-group">
+          <h1 class="heading">whoops</h1>
+          <p class="sub">looks like this page doesn't exist :(</p>
+          <a href="/" class="btn">← back home</a>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
+
+<script>
+  document.fonts.ready.then(() => {
+    document.body.classList.add('fonts-ready');
+  });
+</script>
+
+<style>
+  :root {
+    --yellow: #FFE141;
+    --coral: #FF3358;
+    --teal: #00C9B1;
+    --lav: #C4B5FD;
+    --ink: #1A1A1A;
+    --white: #FFFFFF;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: var(--yellow);
+    background-image: radial-gradient(rgba(26, 26, 26, 0.1) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Unbounded', sans-serif;
+  }
+
+  main {
+    padding: 2rem;
+    animation: enterUp 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    animation-play-state: paused;
+  }
+
+  body.fonts-ready main {
+    animation-play-state: running;
+  }
+
+  @keyframes enterUp {
+    from { opacity: 0; transform: translateY(32px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .layout {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .four-oh-four {
+    font-weight: 900;
+    font-size: clamp(5rem, 22vw, 10rem);
+    color: var(--coral);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    flex-shrink: 0;
+  }
+
+  .scream-zero {
+    display: block;
+    flex-shrink: 0;
+    margin-left: -0.15em;
+    margin-right: -0.21em;
+  }
+
+  .scream-zero img {
+    height: 4em;
+    width: auto;
+    display: block;
+  }
+
+  .text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -1.5em;
+  }
+
+  .heading {
+    font-weight: 900;
+    font-size: clamp(1.4rem, 5vw, 2.2rem);
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 0.6rem;
+  }
+
+  .sub {
+    font-weight: 700;
+    font-size: clamp(0.7rem, 2.2vw, 0.95rem);
+    color: rgba(26, 26, 26, 0.45);
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 24px;
+    border: 3px solid var(--ink);
+    border-radius: 100px;
+    background: var(--ink);
+    color: var(--yellow);
+    font-family: 'Unbounded', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 4px 4px 0 rgba(26, 26, 26, 0.3);
+    transition:
+      transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
+      box-shadow 0.22s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 7px 7px 0 rgba(26, 26, 26, 0.3);
+  }
+</style>
