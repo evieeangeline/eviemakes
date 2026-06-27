@@ -30,4 +30,5 @@ pnpm-debug.log*
 src/pages/projects/
 src/pages/blog/
 src/layouts/BlogPost.astro
-public/images/
+public/images/blog/
+public/images/work-in-progress/
